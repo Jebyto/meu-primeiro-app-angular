@@ -1,0 +1,14 @@
+<p>home works! {{nome}}</p>
+<button [attr.aria-label]="descr" (click)="submit()">botão</button>
+
+@if(deveMostrarTitulo){
+<h1>titulo</h1>
+} @else {
+<h1>titulo não mostrado</h1>
+}
+
+@for(item of listItems; track item.id){
+<p>{{item.name}}</p>
+}
+
+<h2>Valor da prop: {{minhaProp}}</h2>
